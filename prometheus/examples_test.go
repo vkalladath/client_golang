@@ -27,7 +27,7 @@ import (
 
 	"github.com/golang/protobuf/proto"
 
-	"github.com/prometheus/client_golang/prometheus"
+	"github.com/vkalladath/client_golang/prometheus"
 )
 
 func ExampleGauge() {

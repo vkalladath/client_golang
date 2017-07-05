@@ -175,7 +175,7 @@ func nowSeries(t ...time.Time) nower {
 // performing such writes.
 //
 // - It has additional issues with HTTP/2, cf.
-// https://github.com/prometheus/client_golang/issues/272.
+// https://github.com/vkalladath/client_golang/issues/272.
 func InstrumentHandler(handlerName string, handler http.Handler) http.HandlerFunc {
 	return InstrumentHandlerFunc(handlerName, handler.ServeHTTP)
 }

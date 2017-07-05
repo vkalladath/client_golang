@@ -21,7 +21,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/prometheus/client_golang/prometheus"
+	"github.com/vkalladath/client_golang/prometheus"
 )
 
 type errorCollector struct{}
