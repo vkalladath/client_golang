@@ -699,6 +699,7 @@ func checkMetricConsistency(
 			metricFamily.GetName(), dtoMetric,
 		)
 	}
+	fmt.Println(metricFamily.GetName())
 	if dimHash, ok := dimHashes[metricFamily.GetName()]; ok {
 		if dimHash != dh {
 			return fmt.Errorf(
