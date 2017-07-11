@@ -693,12 +693,12 @@ func checkMetricConsistency(
 		dh = hashAdd(dh, lp.GetName())
 		dh = hashAddByte(dh, separatorByte)
 	}
-	/*if _, exists := metricHashes[h]; exists {
+	if _, exists := metricHashes[h]; exists {
 		return fmt.Errorf(
 			"collected metric %s %s was collected before with the same name and label values",
 			metricFamily.GetName(), dtoMetric,
 		)
-	}*/
+	}
 	if dimHash, ok := dimHashes[metricFamily.GetName()]; ok {
 		if dimHash != dh {
 			return fmt.Errorf(
